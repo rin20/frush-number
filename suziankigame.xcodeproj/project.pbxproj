@@ -15,6 +15,7 @@
 		BC44338824E12ECD003FFBA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC44338624E12ECD003FFBA4 /* LaunchScreen.storyboard */; };
 		BC44339324E12ECD003FFBA4 /* suziankigameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44339224E12ECD003FFBA4 /* suziankigameTests.swift */; };
 		BC44339E24E12ECD003FFBA4 /* suziankigameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44339D24E12ECD003FFBA4 /* suziankigameUITests.swift */; };
+		BC4433AE24E3CB41003FFBA4 /* kaitouController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4433AD24E3CB41003FFBA4 /* kaitouController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		BC44339924E12ECD003FFBA4 /* suziankigameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = suziankigameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC44339D24E12ECD003FFBA4 /* suziankigameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suziankigameUITests.swift; sourceTree = "<group>"; };
 		BC44339F24E12ECD003FFBA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC4433AD24E3CB41003FFBA4 /* kaitouController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kaitouController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				BC44338424E12ECD003FFBA4 /* Assets.xcassets */,
 				BC44338624E12ECD003FFBA4 /* LaunchScreen.storyboard */,
 				BC44338924E12ECD003FFBA4 /* Info.plist */,
+				BC4433AD24E3CB41003FFBA4 /* kaitouController.swift */,
 			);
 			path = suziankigame;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				BC44338024E12ECA003FFBA4 /* ViewController.swift in Sources */,
 				BC44337C24E12ECA003FFBA4 /* AppDelegate.swift in Sources */,
 				BC44337E24E12ECA003FFBA4 /* SceneDelegate.swift in Sources */,
+				BC4433AE24E3CB41003FFBA4 /* kaitouController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
