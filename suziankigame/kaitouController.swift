@@ -10,8 +10,8 @@ import UIKit
 
 class kaitouController: UIViewController {
     
-    var argString = ""
-    var argString2 = ""
+    var argString11 = ""
+    var argString12 = ""
 
     @IBOutlet var nyuryoku: UILabel!
     @IBOutlet var seitou: UILabel!
@@ -19,23 +19,25 @@ class kaitouController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        seitou.text = argString
-        nyuryoku.text = argString2
-        // Do any additional setup after loading the view.
-        
     }
     
     @IBAction func mouitido(){
+        argString11 = String("")
         self.dismiss(animated: true, completion: nil)
         }
 
     @IBAction func kakutei(){
+        seitou.text = String(argString11)
+        nyuryoku.text = String(argString12)
         if nyuryoku.text == seitou.text{
             hyouka.text = "おめでとう！"
         }else{
             hyouka.text = "ざんねん..."
         }
+    }
+    
+    @IBAction func nanido(_ sender: Any){
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
     /*

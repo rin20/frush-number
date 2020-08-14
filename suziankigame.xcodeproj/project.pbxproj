@@ -9,13 +9,21 @@
 /* Begin PBXBuildFile section */
 		BC44337C24E12ECA003FFBA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44337B24E12ECA003FFBA4 /* AppDelegate.swift */; };
 		BC44337E24E12ECA003FFBA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44337D24E12ECA003FFBA4 /* SceneDelegate.swift */; };
-		BC44338024E12ECA003FFBA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44337F24E12ECA003FFBA4 /* ViewController.swift */; };
 		BC44338324E12ECA003FFBA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC44338124E12ECA003FFBA4 /* Main.storyboard */; };
 		BC44338524E12ECD003FFBA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC44338424E12ECD003FFBA4 /* Assets.xcassets */; };
 		BC44338824E12ECD003FFBA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC44338624E12ECD003FFBA4 /* LaunchScreen.storyboard */; };
 		BC44339324E12ECD003FFBA4 /* suziankigameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44339224E12ECD003FFBA4 /* suziankigameTests.swift */; };
 		BC44339E24E12ECD003FFBA4 /* suziankigameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44339D24E12ECD003FFBA4 /* suziankigameUITests.swift */; };
 		BC4433AE24E3CB41003FFBA4 /* kaitouController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4433AD24E3CB41003FFBA4 /* kaitouController.swift */; };
+		BC4433B224E4E49D003FFBA4 /* syokiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4433B124E4E49D003FFBA4 /* syokiController.swift */; };
+		BC4433B424E4E4C7003FFBA4 /* View2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4433B324E4E4C7003FFBA4 /* View2Controller.swift */; };
+		BC4433B624E4E4E2003FFBA4 /* kaitou2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4433B524E4E4E2003FFBA4 /* kaitou2Controller.swift */; };
+		BC4433B824E4E4F0003FFBA4 /* View3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4433B724E4E4F0003FFBA4 /* View3Controller.swift */; };
+		BC4433BA24E4E500003FFBA4 /* kaitou3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4433B924E4E500003FFBA4 /* kaitou3Controller.swift */; };
+		BC4433BC24E4E608003FFBA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4433BB24E4E608003FFBA4 /* ViewController.swift */; };
+		BC4433BE24E56C54003FFBA4 /* 緑.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4433BD24E56C53003FFBA4 /* 緑.png */; };
+		BC4433C824E62EF1003FFBA4 /* C2C55193-F06F-4D58-99FF-440B67CDB507_4_5005_c.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BC4433C724E62EF1003FFBA4 /* C2C55193-F06F-4D58-99FF-440B67CDB507_4_5005_c.jpeg */; };
+		BC4433CA24E62FE3003FFBA4 /* a93d51312588f07ba382ca50f1fd27f3-250x446 (2).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BC4433C924E62FE3003FFBA4 /* a93d51312588f07ba382ca50f1fd27f3-250x446 (2).jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +47,6 @@
 		BC44337824E12ECA003FFBA4 /* suziankigame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = suziankigame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC44337B24E12ECA003FFBA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC44337D24E12ECA003FFBA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BC44337F24E12ECA003FFBA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BC44338224E12ECA003FFBA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC44338424E12ECD003FFBA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC44338724E12ECD003FFBA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +58,15 @@
 		BC44339D24E12ECD003FFBA4 /* suziankigameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suziankigameUITests.swift; sourceTree = "<group>"; };
 		BC44339F24E12ECD003FFBA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC4433AD24E3CB41003FFBA4 /* kaitouController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kaitouController.swift; sourceTree = "<group>"; };
+		BC4433B124E4E49D003FFBA4 /* syokiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = syokiController.swift; sourceTree = "<group>"; };
+		BC4433B324E4E4C7003FFBA4 /* View2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2Controller.swift; sourceTree = "<group>"; };
+		BC4433B524E4E4E2003FFBA4 /* kaitou2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kaitou2Controller.swift; sourceTree = "<group>"; };
+		BC4433B724E4E4F0003FFBA4 /* View3Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View3Controller.swift; sourceTree = "<group>"; };
+		BC4433B924E4E500003FFBA4 /* kaitou3Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kaitou3Controller.swift; sourceTree = "<group>"; };
+		BC4433BB24E4E608003FFBA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC4433BD24E56C53003FFBA4 /* 緑.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "緑.png"; sourceTree = "<group>"; };
+		BC4433C724E62EF1003FFBA4 /* C2C55193-F06F-4D58-99FF-440B67CDB507_4_5005_c.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "C2C55193-F06F-4D58-99FF-440B67CDB507_4_5005_c.jpeg"; path = "../../../Pictures/写真ライブラリ.photoslibrary/resources/derivatives/masters/C/C2C55193-F06F-4D58-99FF-440B67CDB507_4_5005_c.jpeg"; sourceTree = "<group>"; };
+		BC4433C924E62FE3003FFBA4 /* a93d51312588f07ba382ca50f1fd27f3-250x446 (2).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "a93d51312588f07ba382ca50f1fd27f3-250x446 (2).jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +119,20 @@
 			children = (
 				BC44337B24E12ECA003FFBA4 /* AppDelegate.swift */,
 				BC44337D24E12ECA003FFBA4 /* SceneDelegate.swift */,
-				BC44337F24E12ECA003FFBA4 /* ViewController.swift */,
 				BC44338124E12ECA003FFBA4 /* Main.storyboard */,
 				BC44338424E12ECD003FFBA4 /* Assets.xcassets */,
+				BC4433C924E62FE3003FFBA4 /* a93d51312588f07ba382ca50f1fd27f3-250x446 (2).jpeg */,
+				BC4433C724E62EF1003FFBA4 /* C2C55193-F06F-4D58-99FF-440B67CDB507_4_5005_c.jpeg */,
+				BC4433BD24E56C53003FFBA4 /* 緑.png */,
 				BC44338624E12ECD003FFBA4 /* LaunchScreen.storyboard */,
 				BC44338924E12ECD003FFBA4 /* Info.plist */,
+				BC4433B124E4E49D003FFBA4 /* syokiController.swift */,
+				BC4433BB24E4E608003FFBA4 /* ViewController.swift */,
 				BC4433AD24E3CB41003FFBA4 /* kaitouController.swift */,
+				BC4433B324E4E4C7003FFBA4 /* View2Controller.swift */,
+				BC4433B524E4E4E2003FFBA4 /* kaitou2Controller.swift */,
+				BC4433B724E4E4F0003FFBA4 /* View3Controller.swift */,
+				BC4433B924E4E500003FFBA4 /* kaitou3Controller.swift */,
 			);
 			path = suziankigame;
 			sourceTree = "<group>";
@@ -235,8 +259,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC4433C824E62EF1003FFBA4 /* C2C55193-F06F-4D58-99FF-440B67CDB507_4_5005_c.jpeg in Resources */,
 				BC44338824E12ECD003FFBA4 /* LaunchScreen.storyboard in Resources */,
+				BC4433BE24E56C54003FFBA4 /* 緑.png in Resources */,
 				BC44338524E12ECD003FFBA4 /* Assets.xcassets in Resources */,
+				BC4433CA24E62FE3003FFBA4 /* a93d51312588f07ba382ca50f1fd27f3-250x446 (2).jpeg in Resources */,
 				BC44338324E12ECA003FFBA4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,9 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC44338024E12ECA003FFBA4 /* ViewController.swift in Sources */,
 				BC44337C24E12ECA003FFBA4 /* AppDelegate.swift in Sources */,
+				BC4433B624E4E4E2003FFBA4 /* kaitou2Controller.swift in Sources */,
+				BC4433B824E4E4F0003FFBA4 /* View3Controller.swift in Sources */,
+				BC4433BC24E4E608003FFBA4 /* ViewController.swift in Sources */,
+				BC4433B424E4E4C7003FFBA4 /* View2Controller.swift in Sources */,
 				BC44337E24E12ECA003FFBA4 /* SceneDelegate.swift in Sources */,
+				BC4433B224E4E49D003FFBA4 /* syokiController.swift in Sources */,
+				BC4433BA24E4E500003FFBA4 /* kaitou3Controller.swift in Sources */,
 				BC4433AE24E3CB41003FFBA4 /* kaitouController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
