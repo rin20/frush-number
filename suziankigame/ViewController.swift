@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        number = Int.random(in:1000000...9999999)
         // Do any additional setup after loading the view.
     }
     
@@ -37,13 +38,13 @@ class ViewController: UIViewController {
         count = count + 0.01
         if count > 0.7{
             timer.invalidate()
-            randam.text = String("-------")
+            randam.text = String("ーーーーーーー")
         }
     }
     
     @IBAction func gamestart() {
         kakikomi.text = ""
-        number = Int.random(in:1000000...9999999)
+        
         randam.text = String(number)
         if !timer.isValid{
             count = 0.0

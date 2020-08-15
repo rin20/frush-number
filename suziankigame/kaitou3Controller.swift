@@ -21,16 +21,6 @@ class kaitouController3: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        // Do any additional setup after loading the view.
-        
-    }
-    
-    @IBAction func mouitido3(){
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func kakutei(){
         seitou3.text = String(argString31)
         nyuryoku3.text = String(argString32)
         if nyuryoku3.text == seitou3.text{
@@ -38,8 +28,13 @@ class kaitouController3: UIViewController {
         }else{
             hyouka3.text = "ざんねん..."
         }
-            
-        }
+        // Do any additional setup after loading the view.
+        
+    }
+    
+    @IBAction func mouitido3(){
+        self.dismiss(animated: true, completion: nil)
+    }
     
      @IBAction func nanido(){
          self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)

@@ -24,6 +24,7 @@
 		BC4433BE24E56C54003FFBA4 /* 緑.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4433BD24E56C53003FFBA4 /* 緑.png */; };
 		BC4433C824E62EF1003FFBA4 /* C2C55193-F06F-4D58-99FF-440B67CDB507_4_5005_c.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BC4433C724E62EF1003FFBA4 /* C2C55193-F06F-4D58-99FF-440B67CDB507_4_5005_c.jpeg */; };
 		BC4433CA24E62FE3003FFBA4 /* a93d51312588f07ba382ca50f1fd27f3-250x446 (2).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BC4433C924E62FE3003FFBA4 /* a93d51312588f07ba382ca50f1fd27f3-250x446 (2).jpeg */; };
+		BC44340A24E788EC003FFBA4 /* eefed22a47169e166d2dfab51d9908a8-250x446.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BC44340924E788EC003FFBA4 /* eefed22a47169e166d2dfab51d9908a8-250x446.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		BC4433BD24E56C53003FFBA4 /* 緑.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "緑.png"; sourceTree = "<group>"; };
 		BC4433C724E62EF1003FFBA4 /* C2C55193-F06F-4D58-99FF-440B67CDB507_4_5005_c.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "C2C55193-F06F-4D58-99FF-440B67CDB507_4_5005_c.jpeg"; path = "../../../Pictures/写真ライブラリ.photoslibrary/resources/derivatives/masters/C/C2C55193-F06F-4D58-99FF-440B67CDB507_4_5005_c.jpeg"; sourceTree = "<group>"; };
 		BC4433C924E62FE3003FFBA4 /* a93d51312588f07ba382ca50f1fd27f3-250x446 (2).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "a93d51312588f07ba382ca50f1fd27f3-250x446 (2).jpeg"; sourceTree = "<group>"; };
+		BC44340924E788EC003FFBA4 /* eefed22a47169e166d2dfab51d9908a8-250x446.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "eefed22a47169e166d2dfab51d9908a8-250x446.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				BC4433C924E62FE3003FFBA4 /* a93d51312588f07ba382ca50f1fd27f3-250x446 (2).jpeg */,
 				BC4433C724E62EF1003FFBA4 /* C2C55193-F06F-4D58-99FF-440B67CDB507_4_5005_c.jpeg */,
 				BC4433BD24E56C53003FFBA4 /* 緑.png */,
+				BC44340924E788EC003FFBA4 /* eefed22a47169e166d2dfab51d9908a8-250x446.jpeg */,
 				BC44338624E12ECD003FFBA4 /* LaunchScreen.storyboard */,
 				BC44338924E12ECD003FFBA4 /* Info.plist */,
 				BC4433B124E4E49D003FFBA4 /* syokiController.swift */,
@@ -264,6 +267,7 @@
 				BC4433BE24E56C54003FFBA4 /* 緑.png in Resources */,
 				BC44338524E12ECD003FFBA4 /* Assets.xcassets in Resources */,
 				BC4433CA24E62FE3003FFBA4 /* a93d51312588f07ba382ca50f1fd27f3-250x446 (2).jpeg in Resources */,
+				BC44340A24E788EC003FFBA4 /* eefed22a47169e166d2dfab51d9908a8-250x446.jpeg in Resources */,
 				BC44338324E12ECA003FFBA4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

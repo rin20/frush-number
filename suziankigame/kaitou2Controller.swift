@@ -20,13 +20,7 @@ class kaitouController2: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    @IBAction func mouitido2(){
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func kakutei2(){
+        
         seitou2.text = String(argString21)
         nyuryoku2.text = String(argString22)
         if nyuryoku2.text == seitou2.text{
@@ -34,6 +28,10 @@ class kaitouController2: UIViewController {
         }else{
             hyouka2.text = "ざんねん..."
         }
+    }
+    
+    @IBAction func mouitido2(){
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func nanido(){

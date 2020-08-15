@@ -22,6 +22,7 @@ class View3Controller: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
@@ -36,12 +37,12 @@ class View3Controller: UIViewController {
         count3 = count3 + 0.01
         if count3 > 0.5{
             timer3.invalidate()
-            randam3.text = String("---")
+            randam3.text = String("ーーー")
         }
     }
     
-    @IBAction func gamestartx3() {
-        kakikomi3.text = ""
+    @IBAction func gamestart3() {
+       kakikomi3.text = ""
         number3 = Int.random(in:100...999)
         randam3.text = String(number3)
         if !timer3.isValid{

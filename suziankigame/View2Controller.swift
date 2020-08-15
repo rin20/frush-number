@@ -36,7 +36,7 @@ class View2Controller: UIViewController {
         count2 = count2 + 0.01
         if count2 > 0.5{
             timer2.invalidate()
-            randam2.text = String("-----")
+            randam2.text = String("ーーーーー")
         }
     }
     

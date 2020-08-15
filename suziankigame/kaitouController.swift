@@ -19,14 +19,7 @@ class kaitouController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    @IBAction func mouitido(){
-        argString11 = String("")
-        self.dismiss(animated: true, completion: nil)
-        }
-
-    @IBAction func kakutei(){
+        
         seitou.text = String(argString11)
         nyuryoku.text = String(argString12)
         if nyuryoku.text == seitou.text{
@@ -36,6 +29,11 @@ class kaitouController: UIViewController {
         }
     }
     
+    @IBAction func mouitido(){
+        argString11 = String("")
+        self.dismiss(animated: true, completion: nil)
+        }
+
     @IBAction func nanido(_ sender: Any){
         self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
     }
