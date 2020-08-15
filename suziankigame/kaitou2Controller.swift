@@ -17,16 +17,21 @@ class kaitouController2: UIViewController {
     @IBOutlet var nyuryoku2: UILabel!
     @IBOutlet var seitou2: UILabel!
     @IBOutlet var hyouka2: UILabel!
+    @IBOutlet var Mouitido: UIButton!
+    @IBOutlet var Nanido: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        Mouitido.layer.cornerRadius = 15
+        Nanido.layer.cornerRadius = 15
+        
         seitou2.text = String(argString21)
         nyuryoku2.text = String(argString22)
         if nyuryoku2.text == seitou2.text{
-            hyouka2.text = "おめでとう！"
+            hyouka2.text = "正解！！"
         }else{
-            hyouka2.text = "ざんねん..."
+            hyouka2.text = "不正解..."
         }
     }
     

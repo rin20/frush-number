@@ -9,11 +9,18 @@
 import UIKit
 
 class syokiController: UIViewController {
+    
+    @IBOutlet var Joukyu: UIButton!
+    @IBOutlet var Tyukyu: UIButton!
+    @IBOutlet var Kakyu: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        Joukyu.layer.cornerRadius = 15
+        Tyukyu.layer.cornerRadius = 15
+        Kakyu.layer.cornerRadius = 15
+        
     }
     
     @IBAction func joukyu(){

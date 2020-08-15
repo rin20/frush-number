@@ -14,6 +14,9 @@ class View2Controller: UIViewController {
     
     @IBOutlet var randam2: UILabel!
     @IBOutlet var kakikomi2: UITextField!
+    @IBOutlet var gameStart: UIButton!
+    @IBOutlet var ok: UIButton!
+    @IBOutlet var Nanido: UIButton!
     
     var number2: Int = 0
     var count2: Float = 0.0
@@ -21,6 +24,11 @@ class View2Controller: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        gameStart.layer.cornerRadius = 15
+        ok.layer.cornerRadius = 15
+        Nanido.layer.cornerRadius = 15
+        number2 = Int.random(in:10000...99999)
         // Do any additional setup after loading the view.
     }
     

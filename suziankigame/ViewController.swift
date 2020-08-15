@@ -14,15 +14,23 @@ class ViewController: UIViewController {
     
     @IBOutlet var randam: UILabel!
     @IBOutlet var kakikomi: UITextField!
-    
+    @IBOutlet var gameStart: UIButton!
+    @IBOutlet var ok: UIButton!
+    @IBOutlet var Nanido: UIButton!
+
     var number: Int = 0
     var count: Float = 0.0
     var timer: Timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        gameStart.layer.cornerRadius = 15
+        ok.layer.cornerRadius = 15
+        Nanido.layer.cornerRadius = 15
         number = Int.random(in:1000000...9999999)
-        // Do any additional setup after loading the view.
+       
+      
     }
     
     
@@ -44,7 +52,7 @@ class ViewController: UIViewController {
     
     @IBAction func gamestart() {
         kakikomi.text = ""
-        
+        number = Int.random(in:1000000...9999999)
         randam.text = String(number)
         if !timer.isValid{
             count = 0.0

@@ -14,6 +14,9 @@ class View3Controller: UIViewController {
     
     @IBOutlet var randam3: UILabel!
     @IBOutlet var kakikomi3: UITextField!
+    @IBOutlet var gameStart: UIButton!
+    @IBOutlet var ok: UIButton!
+    @IBOutlet var Nanido: UIButton!
     
     var number3: Int = 0
     var count3: Float = 0.0
@@ -21,8 +24,11 @@ class View3Controller: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
+        gameStart.layer.cornerRadius = 15
+        ok.layer.cornerRadius = 15
+        Nanido.layer.cornerRadius = 15
+        number3 = Int.random(in:100...999)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
