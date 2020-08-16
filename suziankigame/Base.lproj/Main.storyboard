@@ -66,11 +66,25 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9c1-e6-jnJ">
+                                <rect key="frame" x="56" y="83" width="116" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.68627450980392157" green="0.69019607843137254" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="遊び方">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="help" destination="Dco-Ec-Rec" eventType="touchDown" id="oY5-id-jd9"/>
+                                    <segue destination="zgV-JQ-Qzb" kind="show" id="uF1-ew-HGi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="b4e-pi-n3h"/>
                     </view>
                     <connections>
+                        <outlet property="Help" destination="9c1-e6-jnJ" id="npo-Ag-COy"/>
                         <outlet property="Joukyu" destination="e6i-CE-TnD" id="zCs-oZ-Gl7"/>
                         <outlet property="Kakyu" destination="vKV-ur-nzX" id="zSV-g7-RaX"/>
                         <outlet property="Tyukyu" destination="EAW-ev-NbX" id="7uq-XI-I0n"/>
@@ -78,7 +92,56 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jXD-me-cyP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2050.7246376811595" y="-391.07142857142856"/>
+            <point key="canvasLocation" x="-2314.4927536231885" y="-372.32142857142856"/>
+        </scene>
+        <!--Help Controller-->
+        <scene sceneID="B7J-IV-gVU">
+            <objects>
+                <viewController id="zgV-JQ-Qzb" customClass="helpController" customModule="suziankigame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ayz-6y-oqD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6c3d22ba1c58f6f3458e16b667ae6250 (3).jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="sFk-Ni-Pq5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nWz-cE-DN7">
+                                <rect key="frame" x="10" y="192" width="394" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">         ＜このゲームの遊び方＞               難易度を選び、移動した画面の先でgamestartを押す。     　　　　　　　　　　　　　　　　　　　　　　　　　                 　　　           　　数字が一瞬表示されるので、その数字を入力してOK!を押す。　　　　　　　　　　　　　　                      </string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fvS-sp-UbN">
+                                <rect key="frame" x="-6" y="127" width="427" height="275"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3v-5y-RIP">
+                                <rect key="frame" x="37" y="39" width="100" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.66513270547945202" green="0.94903439280000002" blue="0.94510012870000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="戻る">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="back" destination="zgV-JQ-Qzb" eventType="touchDown" id="bvz-uw-U3x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="G2J-an-adE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7yi-5Y-s0F"/>
+                    <connections>
+                        <outlet property="Back" destination="h3v-5y-RIP" id="H6N-4u-KTW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hYe-8u-GVu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2314.4927536231885" y="511.60714285714283"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -584,6 +647,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="6c3d22ba1c58f6f3458e16b667ae6250 (3).jpeg" width="1920" height="1080"/>
         <image name="C2C55193-F06F-4D58-99FF-440B67CDB507_4_5005_c.jpeg" width="250" height="446"/>
         <image name="eefed22a47169e166d2dfab51d9908a8-250x446.jpeg" width="250" height="446"/>
         <image name="緑.png" width="1000" height="1000"/>
