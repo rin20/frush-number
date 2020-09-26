@@ -12,11 +12,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet var hyouji: UILabel!
     @IBOutlet var randam: UILabel!
     @IBOutlet var kakikomi: UITextField!
     @IBOutlet var gameStart: UIButton!
     @IBOutlet var ok: UIButton!
     @IBOutlet var Nanido: UIButton!
+    @IBOutlet var Re: UIButton!
 
     var number: Int = 0
     var count: Float = 0.0
@@ -28,6 +30,7 @@ class ViewController: UIViewController {
         gameStart.layer.cornerRadius = 15
         ok.layer.cornerRadius = 15
         Nanido.layer.cornerRadius = 15
+        Re.layer.cornerRadius = 15
         number = Int.random(in:1000000...9999999)
        
       
@@ -66,6 +69,24 @@ class ViewController: UIViewController {
         }
         
     }
+    
+    @IBAction func re() {
+        kakikomi.text = ""
+        number = Int.random(in:1000000...9999999)
+        randam.text = String(number)
+        if !timer.isValid{
+            count = 0.0
+            timer = Timer.scheduledTimer(
+                timeInterval:0.01,
+                target: self,
+                selector: #selector(self.up),
+                userInfo: nil,
+                repeats: true
+            )
+        }
+        
+    }
+    
     @IBAction func kettei() {
         
     }
