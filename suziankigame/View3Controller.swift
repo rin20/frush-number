@@ -18,7 +18,6 @@ class View3Controller: UIViewController {
     @IBOutlet var gameStart: UIButton!
     @IBOutlet var ok: UIButton!
     @IBOutlet var Nanido: UIButton!
-    @IBOutlet var re: UIButton!
     
     var number3: Int = 0
     var count3: Float = 0.0
@@ -30,8 +29,9 @@ class View3Controller: UIViewController {
         gameStart.layer.cornerRadius = 15
         ok.layer.cornerRadius = 15
         Nanido.layer.cornerRadius = 15
-        re.layer.cornerRadius = 15
         number3 = Int.random(in:100...999)
+        
+        kakikomi3.isHidden = true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
@@ -64,25 +64,11 @@ class View3Controller: UIViewController {
                 repeats: true
             )
         }
+        kakikomi3.isHidden = false
         
     }
     
-    @IBAction func re3() {
-        kakikomi3.text = ""
-        number3 = Int.random(in:1000000...9999999)
-        randam3.text = String(number3)
-        if !timer3.isValid{
-            count3 = 0.0
-            timer3 = Timer.scheduledTimer(
-                timeInterval:0.01,
-                target: self,
-                selector: #selector(self.up),
-                userInfo: nil,
-                repeats: true
-            )
-        }
-        
-    }
+   
     
     @IBAction func kettei3() {
         

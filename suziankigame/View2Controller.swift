@@ -18,8 +18,6 @@ class View2Controller: UIViewController {
     @IBOutlet var gameStart: UIButton!
     @IBOutlet var ok: UIButton!
     @IBOutlet var Nanido: UIButton!
-    @IBOutlet var re: UIButton!
-    
     var number2: Int = 0
     var count2: Float = 0.0
     var timer2: Timer = Timer()
@@ -30,9 +28,10 @@ class View2Controller: UIViewController {
         gameStart.layer.cornerRadius = 15
         ok.layer.cornerRadius = 15
         Nanido.layer.cornerRadius = 15
-        re.layer.cornerRadius = 15
         number2 = Int.random(in:10000...99999)
         // Do any additional setup after loading the view.
+        
+        kakikomi2.isHidden = true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
@@ -65,25 +64,10 @@ class View2Controller: UIViewController {
                 repeats: true
             )
         }
-        
+        kakikomi2.isHidden = false
     }
     
-    @IBAction func re2() {
-        kakikomi2.text = ""
-        number2 = Int.random(in:1000000...9999999)
-        randam2.text = String(number2)
-        if !timer2.isValid{
-            count2 = 0.0
-            timer2 = Timer.scheduledTimer(
-                timeInterval:0.01,
-                target: self,
-                selector: #selector(self.up),
-                userInfo: nil,
-                repeats: true
-            )
-        }
-        
-    }
+   
     
     @IBAction func kettei2() {
         

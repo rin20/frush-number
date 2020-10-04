@@ -1,23 +1,15 @@
-
-//
-//  ViewController.swift
-//  suziankigame
-//
-//  Created by Mitsu Kumagai on 2020/08/10.
-//  Copyright © 2020 kumagai rin. All rights reserved.
-//
-
-
 import UIKit
 
-class ViewController: UIViewController {
+class NextViewController: UIViewController {
     
-    @IBOutlet var hyouji: UILabel!
+    
+    
     @IBOutlet var randam: UILabel!
     @IBOutlet var kakikomi: UITextField!
     @IBOutlet var gameStart: UIButton!
     @IBOutlet var ok: UIButton!
     @IBOutlet var Nanido: UIButton!
+    @IBOutlet var keta: UILabel!
 
     var number: Int = 0
     var count: Float = 0.0
@@ -87,4 +79,5 @@ class ViewController: UIViewController {
     }
     
 }
+
 

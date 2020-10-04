@@ -36,6 +36,8 @@ class kaitouController2: UIViewController {
     }
     
     @IBAction func mouitido2(){
+        let parentVC = presentingViewController as! View2Controller
+        parentVC.kakikomi2.text = ""
         self.dismiss(animated: true, completion: nil)
     }
     

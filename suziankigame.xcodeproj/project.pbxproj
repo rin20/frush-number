@@ -29,6 +29,11 @@
 		BC44340E24E8D4E2003FFBA4 /* eefed22a47169e166d2dfab51d9908a8-250x446 (1).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BC44340D24E8D4E2003FFBA4 /* eefed22a47169e166d2dfab51d9908a8-250x446 (1).jpeg */; };
 		BC44341024E8D6A5003FFBA4 /* 6c3d22ba1c58f6f3458e16b667ae6250 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BC44340F24E8D6A4003FFBA4 /* 6c3d22ba1c58f6f3458e16b667ae6250 2.jpeg */; };
 		BC44341424E8EA4F003FFBA4 /* 6c3d22ba1c58f6f3458e16b667ae6250 (3).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BC44341324E8EA4F003FFBA4 /* 6c3d22ba1c58f6f3458e16b667ae6250 (3).jpeg */; };
+		BC613996252896FF0041DBD4 /* AnzanFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC613995252896FF0041DBD4 /* AnzanFirstViewController.swift */; };
+		BC61399B2528AC800041DBD4 /* AnzanKaitouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC61399A2528AC800041DBD4 /* AnzanKaitouViewController.swift */; };
+		BC6139A325294F690041DBD4 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6139A225294F690041DBD4 /* NextViewController.swift */; };
+		BC6139A825294F9D0041DBD4 /* NextSyokiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6139A725294F9D0041DBD4 /* NextSyokiViewController.swift */; };
+		BC6139AD25294FAC0041DBD4 /* NextKaitoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6139AC25294FAC0041DBD4 /* NextKaitoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +82,11 @@
 		BC44340D24E8D4E2003FFBA4 /* eefed22a47169e166d2dfab51d9908a8-250x446 (1).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "eefed22a47169e166d2dfab51d9908a8-250x446 (1).jpeg"; sourceTree = "<group>"; };
 		BC44340F24E8D6A4003FFBA4 /* 6c3d22ba1c58f6f3458e16b667ae6250 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "6c3d22ba1c58f6f3458e16b667ae6250 2.jpeg"; sourceTree = "<group>"; };
 		BC44341324E8EA4F003FFBA4 /* 6c3d22ba1c58f6f3458e16b667ae6250 (3).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "6c3d22ba1c58f6f3458e16b667ae6250 (3).jpeg"; sourceTree = "<group>"; };
+		BC613995252896FF0041DBD4 /* AnzanFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnzanFirstViewController.swift; sourceTree = "<group>"; };
+		BC61399A2528AC800041DBD4 /* AnzanKaitouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnzanKaitouViewController.swift; sourceTree = "<group>"; };
+		BC6139A225294F690041DBD4 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		BC6139A725294F9D0041DBD4 /* NextSyokiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextSyokiViewController.swift; sourceTree = "<group>"; };
+		BC6139AC25294FAC0041DBD4 /* NextKaitoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextKaitoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +158,11 @@
 				BC4433B724E4E4F0003FFBA4 /* View3Controller.swift */,
 				BC4433B924E4E500003FFBA4 /* kaitou3Controller.swift */,
 				BC44340B24E8CED8003FFBA4 /* helpController.swift */,
+				BC613995252896FF0041DBD4 /* AnzanFirstViewController.swift */,
+				BC61399A2528AC800041DBD4 /* AnzanKaitouViewController.swift */,
+				BC6139A225294F690041DBD4 /* NextViewController.swift */,
+				BC6139A725294F9D0041DBD4 /* NextSyokiViewController.swift */,
+				BC6139AC25294FAC0041DBD4 /* NextKaitoViewController.swift */,
 			);
 			path = suziankigame;
 			sourceTree = "<group>";
@@ -310,12 +325,17 @@
 			files = (
 				BC44337C24E12ECA003FFBA4 /* AppDelegate.swift in Sources */,
 				BC4433B624E4E4E2003FFBA4 /* kaitou2Controller.swift in Sources */,
+				BC61399B2528AC800041DBD4 /* AnzanKaitouViewController.swift in Sources */,
+				BC613996252896FF0041DBD4 /* AnzanFirstViewController.swift in Sources */,
 				BC4433B824E4E4F0003FFBA4 /* View3Controller.swift in Sources */,
 				BC4433BC24E4E608003FFBA4 /* ViewController.swift in Sources */,
+				BC6139A325294F690041DBD4 /* NextViewController.swift in Sources */,
 				BC4433B424E4E4C7003FFBA4 /* View2Controller.swift in Sources */,
 				BC44337E24E12ECA003FFBA4 /* SceneDelegate.swift in Sources */,
 				BC44340C24E8CED8003FFBA4 /* helpController.swift in Sources */,
+				BC6139AD25294FAC0041DBD4 /* NextKaitoViewController.swift in Sources */,
 				BC4433B224E4E49D003FFBA4 /* syokiController.swift in Sources */,
+				BC6139A825294F9D0041DBD4 /* NextSyokiViewController.swift in Sources */,
 				BC4433BA24E4E500003FFBA4 /* kaitou3Controller.swift in Sources */,
 				BC4433AE24E3CB41003FFBA4 /* kaitouController.swift in Sources */,
 			);
