@@ -32,8 +32,8 @@ class AnzanFirstViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier == "toAKView"{
-            let nextView = segue.destination as! kaitouController
-            nextView.argString11 = String(number1)
+            let nextView = segue.destination as! AnzanKaitouViewController
+            nextView.argString11 = String(answer)
             nextView.argString12 = Kakikomi.text!
             
         }
@@ -65,7 +65,7 @@ class AnzanFirstViewController: UIViewController {
             )
         }
         Kakikomi.isHidden = false
-        
+        answer = number1 + number2
     }
     
     @IBAction func ok(){

@@ -22,9 +22,10 @@ class AnzanKaitouViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         Seitou.text = String(argString11)
         Nyuryoku.text = String(argString12)
+        
         if Nyuryoku.text == Seitou.text{
             Hyouka.text = "正解！！"
         }else{
@@ -42,6 +43,10 @@ class AnzanKaitouViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
 
+    @IBAction func nanido(){
+         self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
