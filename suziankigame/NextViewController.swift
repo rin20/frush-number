@@ -52,17 +52,17 @@ class NextViewController: UIViewController {
     @objc func up() {
         count = count + 0.01
         if keta.text == "３桁"{
-            if count > 0.3{
+            if count > 0.05{
                         timer.invalidate()
                         randam.text = String("ーーー")
                     }
         }else if keta.text == "５桁"{
-            if count > 0.5{
+            if count > 0.1{
                 timer.invalidate()
                 randam.text = String("ーーーーー")
             }
         }else if keta.text == "７桁"{
-            if count > 0.5{
+            if count > 0.3{
                 timer.invalidate()
                 randam.text = String("ーーーーーーー")
             }
