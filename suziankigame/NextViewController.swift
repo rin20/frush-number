@@ -23,10 +23,18 @@ class NextViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        gameStart.layer.cornerRadius = 15
-        ok.layer.cornerRadius = 15
-        Nanido.layer.cornerRadius = 15
+        gameStart.layer.cornerRadius = 20.0
+        ok.layer.cornerRadius = 20.0
+        Nanido.layer.cornerRadius = 20.0
         
+        let rgba = UIColor(red: 0.14, green: 0.47, blue: 1.0, alpha: 1.0)
+        kakikomi.textColor = rgba
+        
+        let first = UIColor(red: 0.85, green: 0.86, blue: 1.0, alpha: 1.0)
+        let second = UIColor(red: 0.89, green: 0.73, blue: 1.0, alpha: 1.0)
+        let third = UIColor(red: 0.75, green: 0.89, blue: 1.0, alpha: 1.0)
+        
+
         kakikomi.text = ""
         kakikomi.isHidden = true
         
@@ -57,12 +65,12 @@ class NextViewController: UIViewController {
                         randam.text = String("ーーー")
                     }
         }else if keta.text == "５桁"{
-            if count > 0.1{
+            if count > 0.05{
                 timer.invalidate()
                 randam.text = String("ーーーーー")
             }
         }else if keta.text == "７桁"{
-            if count > 0.3{
+            if count > 0.2{
                 timer.invalidate()
                 randam.text = String("ーーーーーーー")
             }

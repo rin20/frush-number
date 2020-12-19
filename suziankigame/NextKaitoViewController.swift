@@ -15,8 +15,8 @@ class NextKaitoController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Mouitido.layer.cornerRadius = 15
-        Nanido.layer.cornerRadius = 15
+        Mouitido.layer.cornerRadius = 20.0
+        Nanido.layer.cornerRadius = 20.0    
 
         seitou.text = String(argString12)
         nyuryoku.text = String(argString13)

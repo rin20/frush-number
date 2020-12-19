@@ -15,9 +15,17 @@ class NextSyokiViewController: UIViewController {
     @IBOutlet var Easy: UIButton!
     @IBOutlet var Normal: UIButton!
     @IBOutlet var Hard: UIButton!
+    @IBOutlet var rule: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+            
+        Easy.layer.cornerRadius = 20.0
+        Normal.layer.cornerRadius = 20.0
+        Hard.layer.cornerRadius = 20.0
+        rule.layer.cornerRadius = 20.0
+
+
 
         // Do any additional setup after loading the view.
     }
