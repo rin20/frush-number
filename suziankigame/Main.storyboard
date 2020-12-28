@@ -325,8 +325,8 @@
                                 <color key="textColor" red="0.41913739949452056" green="0.67036508472714618" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="hbs-R0-4Gq">
-                                <rect key="frame" x="117" y="438" width="180" height="300"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="hbs-R0-4Gq">
+                                <rect key="frame" x="117" y="458" width="180" height="280"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3i-FC-K1g">
                                         <rect key="frame" x="0.0" y="0.0" width="180" height="66"/>
@@ -343,7 +343,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyC-hV-5KF">
-                                        <rect key="frame" x="0.0" y="117" width="180" height="66"/>
+                                        <rect key="frame" x="0.0" y="107" width="180" height="66"/>
                                         <color key="backgroundColor" red="0.69803921568627447" green="0.8666666666666667" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="rounded-mgenplus-2c-medium" family="Rounded Mgen+ 2c" pointSize="38"/>
                                         <color key="tintColor" systemColor="systemBlueColor"/>
@@ -355,7 +355,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJx-y6-dAJ">
-                                        <rect key="frame" x="0.0" y="234" width="180" height="66"/>
+                                        <rect key="frame" x="0.0" y="214" width="180" height="66"/>
                                         <color key="backgroundColor" red="0.81960784313725488" green="0.67450980392156867" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="rounded-mgenplus-2c-medium" family="Rounded Mgen+ 2c" pointSize="38"/>
                                         <state key="normal" title="７桁">
@@ -405,18 +405,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ーーーーーーー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqa-l9-6kh">
-                                <rect key="frame" x="74" y="345.5" width="266" height="53.5"/>
+                                <rect key="frame" x="74" y="325.5" width="266" height="53.5"/>
                                 <fontDescription key="fontDescription" name="rounded-mgenplus-2c-medium" family="Rounded Mgen+ 2c" pointSize="38"/>
                                 <color key="textColor" red="0.0" green="0.38056506849315069" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yIx-fc-WvN">
-                                <rect key="frame" x="40" y="434" width="334" height="36"/>
+                                <rect key="frame" x="40" y="414" width="334" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="zHS-i9-3My"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="lIG-cG-a2X">
-                                <rect key="frame" x="112" y="540" width="190" height="248"/>
+                                <rect key="frame" x="112" y="520" width="190" height="248"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrM-F9-dzv">
                                         <rect key="frame" x="0.0" y="0.0" width="190" height="56"/>
@@ -466,8 +469,8 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="７桁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QqI-aw-Pay">
-                                <rect key="frame" x="169" y="222" width="76" height="53.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="７桁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QqI-aw-Pay">
+                                <rect key="frame" x="169" y="212" width="76" height="53.5"/>
                                 <fontDescription key="fontDescription" name="rounded-mgenplus-2c-medium" family="Rounded Mgen+ 2c" pointSize="38"/>
                                 <color key="textColor" red="0.0" green="0.38056506849315069" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -478,13 +481,12 @@
                         <constraints>
                             <constraint firstItem="yIx-fc-WvN" firstAttribute="centerX" secondItem="DCx-sb-xfE" secondAttribute="centerX" id="5Qs-7P-hXM"/>
                             <constraint firstItem="Qqa-l9-6kh" firstAttribute="centerX" secondItem="DCx-sb-xfE" secondAttribute="centerX" id="Bei-1R-FLi"/>
+                            <constraint firstItem="Qqa-l9-6kh" firstAttribute="top" secondItem="QqI-aw-Pay" secondAttribute="bottom" constant="60" id="CTX-xC-dss"/>
                             <constraint firstItem="yIx-fc-WvN" firstAttribute="leading" secondItem="AwT-c9-Pds" secondAttribute="leading" constant="40" id="LfC-94-AhY"/>
                             <constraint firstItem="QqI-aw-Pay" firstAttribute="centerX" secondItem="DCx-sb-xfE" secondAttribute="centerX" id="UsL-ys-Ik4"/>
-                            <constraint firstItem="Qqa-l9-6kh" firstAttribute="top" relation="lessThanOrEqual" secondItem="QqI-aw-Pay" secondAttribute="bottom" constant="58" id="Vrb-p8-GC8"/>
                             <constraint firstItem="yIx-fc-WvN" firstAttribute="top" secondItem="Qqa-l9-6kh" secondAttribute="bottom" constant="35" id="cEL-C0-cQS"/>
-                            <constraint firstItem="AwT-c9-Pds" firstAttribute="bottom" secondItem="lIG-cG-a2X" secondAttribute="bottom" constant="20" id="cuz-Fm-wwk"/>
+                            <constraint firstItem="AwT-c9-Pds" firstAttribute="bottom" secondItem="lIG-cG-a2X" secondAttribute="bottom" constant="40" id="cuz-Fm-wwk"/>
                             <constraint firstItem="AwT-c9-Pds" firstAttribute="trailing" secondItem="yIx-fc-WvN" secondAttribute="trailing" constant="40" id="g0K-xi-G3f"/>
-                            <constraint firstItem="Qqa-l9-6kh" firstAttribute="top" relation="greaterThanOrEqual" secondItem="QqI-aw-Pay" secondAttribute="bottom" constant="20" id="iAs-Sh-Q0x"/>
                             <constraint firstItem="lIG-cG-a2X" firstAttribute="top" secondItem="yIx-fc-WvN" secondAttribute="bottom" constant="70" id="oxt-kB-Glj"/>
                             <constraint firstItem="lIG-cG-a2X" firstAttribute="centerX" secondItem="DCx-sb-xfE" secondAttribute="centerX" id="vn9-d2-twz"/>
                             <constraint firstItem="QqI-aw-Pay" firstAttribute="top" relation="greaterThanOrEqual" secondItem="AwT-c9-Pds" secondAttribute="top" constant="40" id="xg3-Mr-LpF"/>
