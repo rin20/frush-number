@@ -242,7 +242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hYe-8u-GVu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2314.4927536231885" y="511.60714285714283"/>
+            <point key="canvasLocation" x="-2391" y="321"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1wp-1v-AGe">
@@ -300,102 +300,88 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="74" translatesAutoresizingMaskIntoConstraints="NO" id="ZoK-F6-tcJ">
-                                <rect key="frame" x="57" y="36" width="300" height="706"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhb-NY-Mdz">
+                                <rect key="frame" x="30" y="40" width="104" height="60"/>
+                                <color key="backgroundColor" red="0.71037564212328763" green="0.8474422089041096" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="CHo-O4-k1R"/>
+                                    <constraint firstAttribute="width" constant="104" id="urC-ni-eiS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="rounded-mgenplus-2c-medium" family="Rounded Mgen+ 2c" pointSize="23"/>
+                                <state key="normal" title="遊び方">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zgV-JQ-Qzb" kind="show" id="0TV-Ph-hEy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="フラッシュ ナンバー" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="raF-Qf-KeO">
+                                <rect key="frame" x="74.5" y="180" width="265" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="280" id="hvl-g6-fHT"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="180" id="l74-7p-eZa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="mini-wakuwaku-maru" family="mini-wakuwaku-maru" pointSize="53"/>
+                                <color key="textColor" red="0.41913739949452056" green="0.67036508472714618" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="hbs-R0-4Gq">
+                                <rect key="frame" x="117" y="438" width="180" height="300"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhb-NY-Mdz">
-                                        <rect key="frame" x="98" y="0.0" width="104" height="60"/>
-                                        <color key="backgroundColor" red="0.71037564212328763" green="0.8474422089041096" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3i-FC-K1g">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="66"/>
+                                        <color key="backgroundColor" red="0.69803921568627447" green="0.70980392156862748" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="CHo-O4-k1R"/>
-                                            <constraint firstAttribute="width" constant="104" id="urC-ni-eiS"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="SKB-tY-z2n"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="rounded-mgenplus-2c-medium" family="Rounded Mgen+ 2c" pointSize="23"/>
-                                        <state key="normal" title="遊び方">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="rounded-mgenplus-2c-medium" family="Rounded Mgen+ 2c" pointSize="38"/>
+                                        <state key="normal" title="３桁">
+                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
                                         </state>
                                         <connections>
-                                            <segue destination="zgV-JQ-Qzb" kind="show" id="0TV-Ph-hEy"/>
+                                            <segue destination="eAK-dn-dx3" kind="presentation" identifier="eazySegue" id="Pt5-VF-s8I"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="フラッシュ ナンバー" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="raF-Qf-KeO">
-                                        <rect key="frame" x="10" y="134" width="280" height="180"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="280" id="hvl-g6-fHT"/>
-                                            <constraint firstAttribute="height" constant="180" id="l74-7p-eZa"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="mini-wakuwaku-maru" family="mini-wakuwaku-maru" pointSize="53"/>
-                                        <color key="textColor" red="0.41913739949452056" green="0.67036508472714618" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="hbs-R0-4Gq">
-                                        <rect key="frame" x="60" y="388" width="180" height="318"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3i-FC-K1g">
-                                                <rect key="frame" x="0.0" y="0.0" width="180" height="80"/>
-                                                <color key="backgroundColor" red="0.69803921568627447" green="0.70980392156862748" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Feh-xO-8la"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="rounded-mgenplus-2c-medium" family="Rounded Mgen+ 2c" pointSize="38"/>
-                                                <state key="normal" title="３桁">
-                                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="eAK-dn-dx3" kind="presentation" identifier="eazySegue" id="Pt5-VF-s8I"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyC-hV-5KF">
-                                                <rect key="frame" x="0.0" y="119" width="180" height="80"/>
-                                                <color key="backgroundColor" red="0.69803921568627447" green="0.8666666666666667" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="ZEL-zA-4g9"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="rounded-mgenplus-2c-medium" family="Rounded Mgen+ 2c" pointSize="38"/>
-                                                <color key="tintColor" systemColor="systemBlueColor"/>
-                                                <state key="normal" title="５桁">
-                                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="eAK-dn-dx3" kind="show" identifier="normalSegue" id="jLi-Eo-Wv0"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJx-y6-dAJ">
-                                                <rect key="frame" x="0.0" y="238" width="180" height="80"/>
-                                                <color key="backgroundColor" red="0.81960784313725488" green="0.67450980392156867" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="NMp-jO-sM6"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="rounded-mgenplus-2c-medium" family="Rounded Mgen+ 2c" pointSize="38"/>
-                                                <state key="normal" title="７桁">
-                                                    <color key="titleColor" systemColor="systemGray6Color"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="eAK-dn-dx3" kind="show" identifier="hardSegue" id="Gh9-Cf-TSB"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="180" id="DKZ-Q8-d52"/>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="318" id="fNr-iD-sNr"/>
-                                        </constraints>
-                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyC-hV-5KF">
+                                        <rect key="frame" x="0.0" y="117" width="180" height="66"/>
+                                        <color key="backgroundColor" red="0.69803921568627447" green="0.8666666666666667" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="rounded-mgenplus-2c-medium" family="Rounded Mgen+ 2c" pointSize="38"/>
+                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                        <state key="normal" title="５桁">
+                                            <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="eAK-dn-dx3" kind="show" identifier="normalSegue" id="jLi-Eo-Wv0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJx-y6-dAJ">
+                                        <rect key="frame" x="0.0" y="234" width="180" height="66"/>
+                                        <color key="backgroundColor" red="0.81960784313725488" green="0.67450980392156867" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="rounded-mgenplus-2c-medium" family="Rounded Mgen+ 2c" pointSize="38"/>
+                                        <state key="normal" title="７桁">
+                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="eAK-dn-dx3" kind="show" identifier="hardSegue" id="Gh9-Cf-TSB"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="hbs-R0-4Gq" firstAttribute="top" relation="lessThanOrEqual" secondItem="raF-Qf-KeO" secondAttribute="bottom" constant="74" id="8su-dj-Dsg"/>
-                                    <constraint firstItem="raF-Qf-KeO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="lhb-NY-Mdz" secondAttribute="bottom" priority="750" constant="30" id="J5J-46-Awc"/>
-                                    <constraint firstItem="raF-Qf-KeO" firstAttribute="top" relation="lessThanOrEqual" secondItem="lhb-NY-Mdz" secondAttribute="bottom" constant="75" id="cLO-cm-ILq"/>
-                                    <constraint firstAttribute="width" constant="300" id="fMh-PJ-gbt"/>
-                                    <constraint firstItem="hbs-R0-4Gq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="raF-Qf-KeO" secondAttribute="bottom" constant="30" id="qc4-ZX-kYV"/>
+                                    <constraint firstAttribute="width" constant="180" id="DKZ-Q8-d52"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="320" id="fNr-iD-sNr"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Z3-Pe-Gt9"/>
                         <color key="backgroundColor" red="0.91337782140000001" green="0.91832441090000005" blue="0.87842625379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="6Z3-Pe-Gt9" firstAttribute="bottom" secondItem="ZoK-F6-tcJ" secondAttribute="bottom" constant="30" id="Lyi-Uq-1WQ"/>
-                            <constraint firstItem="ZoK-F6-tcJ" firstAttribute="centerX" secondItem="26w-AL-AWX" secondAttribute="centerX" id="mAM-4t-dml"/>
-                            <constraint firstItem="ZoK-F6-tcJ" firstAttribute="top" secondItem="6Z3-Pe-Gt9" secondAttribute="top" constant="80" id="pFP-Gb-kVO"/>
+                            <constraint firstItem="hbs-R0-4Gq" firstAttribute="centerX" secondItem="26w-AL-AWX" secondAttribute="centerX" id="3mr-hd-hqq"/>
+                            <constraint firstItem="hbs-R0-4Gq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="raF-Qf-KeO" secondAttribute="bottom" id="5zK-1E-pva"/>
+                            <constraint firstItem="raF-Qf-KeO" firstAttribute="top" secondItem="lhb-NY-Mdz" secondAttribute="bottom" constant="80" id="BHJ-o1-luK"/>
+                            <constraint firstItem="6Z3-Pe-Gt9" firstAttribute="bottom" secondItem="hbs-R0-4Gq" secondAttribute="bottom" constant="70" id="XtI-2T-bXD"/>
+                            <constraint firstItem="lhb-NY-Mdz" firstAttribute="leading" secondItem="6Z3-Pe-Gt9" secondAttribute="leading" constant="30" id="dMO-nu-NJq"/>
+                            <constraint firstItem="raF-Qf-KeO" firstAttribute="centerX" secondItem="26w-AL-AWX" secondAttribute="centerX" id="qn9-NJ-FqU"/>
+                            <constraint firstItem="lhb-NY-Mdz" firstAttribute="top" secondItem="6Z3-Pe-Gt9" secondAttribute="top" constant="40" id="rCY-Eo-Yxq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3gg-Cs-bGN"/>
@@ -408,7 +394,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DMy-Nd-ZJB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2390" y="-462"/>
+            <point key="canvasLocation" x="-2391.304347826087" y="-462.05357142857139"/>
         </scene>
         <!--Next View Controller-->
         <scene sceneID="sms-HP-kfc">
@@ -516,17 +502,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ib-4d-Hpi" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1304.3478260869567" y="-372.32142857142856"/>
+            <point key="canvasLocation" x="-1407" y="-462"/>
         </scene>
         <!--Next Kaito Controller-->
         <scene sceneID="qCU-e4-3i7">
             <objects>
                 <viewController id="nuL-QZ-sha" customClass="NextKaitoController" customModule="suziankigame" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9ox-bC-aRo">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="9ox-bC-aRo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="aYC-Ve-O1G">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="aYC-Ve-O1G">
                                 <rect key="frame" x="15" y="165" width="384" height="178"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Pty-OP-o8f">
@@ -587,7 +573,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="m5f-bc-ywN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="m5f-bc-ywN">
                                 <rect key="frame" x="82" y="40" width="250" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="m5f-bc-ywN" secondAttribute="height" multiplier="25:6" id="9x0-57-qQb"/>
@@ -597,7 +583,7 @@
                                 <color key="textColor" red="0.1036266163" green="0.46542704109999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="6rg-VI-rFX">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="6rg-VI-rFX">
                                 <rect key="frame" x="122" y="533" width="170" height="175"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8B-Jp-4Wv">
@@ -658,11 +644,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nez-4W-lol" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1304.3478260869567" y="511.60714285714283"/>
+            <point key="canvasLocation" x="-1407" y="321"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Pt5-VF-s8I"/>
+        <segue reference="Gh9-Cf-TSB"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="groupTableViewBackgroundColor">
