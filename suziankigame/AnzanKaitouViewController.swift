@@ -22,6 +22,7 @@ class AnzanKaitouViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     
         Seitou.text = String(argString11)
         Nyuryoku.text = String(argString12)

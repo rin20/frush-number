@@ -316,25 +316,26 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="フラッシュ ナンバー" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="raF-Qf-KeO">
-                                <rect key="frame" x="74.5" y="180" width="265" height="106"/>
+                                <rect key="frame" x="74.5" y="140" width="265" height="106"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="280" id="hvl-g6-fHT"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="180" id="l74-7p-eZa"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="l74-7p-eZa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="mini-wakuwaku-maru" family="mini-wakuwaku-maru" pointSize="53"/>
                                 <color key="textColor" red="0.41913739949452056" green="0.67036508472714618" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="hbs-R0-4Gq">
-                                <rect key="frame" x="117" y="458" width="180" height="280"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="hbs-R0-4Gq">
+                                <rect key="frame" x="129" y="465" width="156" height="273"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3i-FC-K1g">
-                                        <rect key="frame" x="0.0" y="0.0" width="180" height="66"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="156" height="64"/>
                                         <color key="backgroundColor" red="0.69803921568627447" green="0.70980392156862748" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="SKB-tY-z2n"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="160" id="SKB-tY-z2n"/>
+                                            <constraint firstAttribute="width" secondItem="G3i-FC-K1g" secondAttribute="height" multiplier="80:33" id="vk7-4E-vu4"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="rounded-mgenplus-2c-medium" family="Rounded Mgen+ 2c" pointSize="38"/>
+                                        <fontDescription key="fontDescription" name="rounded-mgenplus-2c-medium" family="Rounded Mgen+ 2c" pointSize="32"/>
                                         <state key="normal" title="３桁">
                                             <color key="titleColor" systemColor="systemBackgroundColor"/>
                                         </state>
@@ -343,9 +344,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyC-hV-5KF">
-                                        <rect key="frame" x="0.0" y="107" width="180" height="66"/>
+                                        <rect key="frame" x="0.0" y="104" width="156" height="64.5"/>
                                         <color key="backgroundColor" red="0.69803921568627447" green="0.8666666666666667" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="rounded-mgenplus-2c-medium" family="Rounded Mgen+ 2c" pointSize="38"/>
+                                        <fontDescription key="fontDescription" name="rounded-mgenplus-2c-medium" family="Rounded Mgen+ 2c" pointSize="32"/>
                                         <color key="tintColor" systemColor="systemBlueColor"/>
                                         <state key="normal" title="５桁">
                                             <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
@@ -355,9 +356,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJx-y6-dAJ">
-                                        <rect key="frame" x="0.0" y="214" width="180" height="66"/>
+                                        <rect key="frame" x="0.0" y="208.5" width="156" height="64.5"/>
                                         <color key="backgroundColor" red="0.81960784313725488" green="0.67450980392156867" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="rounded-mgenplus-2c-medium" family="Rounded Mgen+ 2c" pointSize="38"/>
+                                        <fontDescription key="fontDescription" name="rounded-mgenplus-2c-medium" family="Rounded Mgen+ 2c" pointSize="32"/>
                                         <state key="normal" title="７桁">
                                             <color key="titleColor" systemColor="systemGray6Color"/>
                                         </state>
@@ -367,7 +368,7 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="DKZ-Q8-d52"/>
+                                    <constraint firstAttribute="width" secondItem="hbs-R0-4Gq" secondAttribute="height" multiplier="4:7" id="11R-EG-Ys0"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="320" id="fNr-iD-sNr"/>
                                 </constraints>
                             </stackView>
@@ -376,8 +377,8 @@
                         <color key="backgroundColor" red="0.91337782140000001" green="0.91832441090000005" blue="0.87842625379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="hbs-R0-4Gq" firstAttribute="centerX" secondItem="26w-AL-AWX" secondAttribute="centerX" id="3mr-hd-hqq"/>
-                            <constraint firstItem="hbs-R0-4Gq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="raF-Qf-KeO" secondAttribute="bottom" id="5zK-1E-pva"/>
-                            <constraint firstItem="raF-Qf-KeO" firstAttribute="top" secondItem="lhb-NY-Mdz" secondAttribute="bottom" constant="80" id="BHJ-o1-luK"/>
+                            <constraint firstItem="hbs-R0-4Gq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="raF-Qf-KeO" secondAttribute="bottom" constant="30" id="5zK-1E-pva"/>
+                            <constraint firstItem="raF-Qf-KeO" firstAttribute="top" secondItem="lhb-NY-Mdz" secondAttribute="bottom" constant="40" id="BHJ-o1-luK"/>
                             <constraint firstItem="6Z3-Pe-Gt9" firstAttribute="bottom" secondItem="hbs-R0-4Gq" secondAttribute="bottom" constant="70" id="XtI-2T-bXD"/>
                             <constraint firstItem="lhb-NY-Mdz" firstAttribute="leading" secondItem="6Z3-Pe-Gt9" secondAttribute="leading" constant="30" id="dMO-nu-NJq"/>
                             <constraint firstItem="raF-Qf-KeO" firstAttribute="centerX" secondItem="26w-AL-AWX" secondAttribute="centerX" id="qn9-NJ-FqU"/>
@@ -387,6 +388,7 @@
                     <navigationItem key="navigationItem" id="3gg-Cs-bGN"/>
                     <connections>
                         <outlet property="Easy" destination="G3i-FC-K1g" id="twS-D3-jrq"/>
+                        <outlet property="FrushNumber" destination="raF-Qf-KeO" id="nUQ-xk-HWg"/>
                         <outlet property="Hard" destination="uJx-y6-dAJ" id="l58-Xd-thA"/>
                         <outlet property="Normal" destination="SyC-hV-5KF" id="VYr-Gh-cGG"/>
                         <outlet property="rule" destination="lhb-NY-Mdz" id="LOj-XZ-ecv"/>

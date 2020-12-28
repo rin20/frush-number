@@ -16,17 +16,17 @@ class NextSyokiViewController: UIViewController {
     @IBOutlet var Normal: UIButton!
     @IBOutlet var Hard: UIButton!
     @IBOutlet var rule: UIButton!
+    @IBOutlet var FrushNumber: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
             
-        Easy.layer.cornerRadius = 20.0
-        Normal.layer.cornerRadius = 20.0
-        Hard.layer.cornerRadius = 20.0
+        Easy.layer.cornerRadius = Easy.frame.size.width * 0.135
+        Normal.layer.cornerRadius = Normal.frame.size.width * 0.135
+        Hard.layer.cornerRadius = Hard.frame.size.width * 0.135
         rule.layer.cornerRadius = 20.0
 
-
-
+        FrushNumber.adjustsFontSizeToFitWidth = true
         // Do any additional setup after loading the view.
     }
     
